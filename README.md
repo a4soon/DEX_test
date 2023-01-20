@@ -376,4 +376,5 @@ Post your solution on your [BuidlGuidl.com](https://buidlguidl.com) profile and 
 
 > 💬 Problems, questions, comments on the stack? Post them to the [🏗 scaffold-eth developers chat](https://t.me/joinchat/F7nCRK3kI93PoCOk)
 #   D E X - t r a i n i n g  
+ #   D E X - t r a i n i n g  
  
