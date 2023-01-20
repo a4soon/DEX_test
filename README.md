@@ -375,3 +375,5 @@ Update the api-key in packages/hardhat/package.json file. You can get your key [
 Post your solution on your [BuidlGuidl.com](https://buidlguidl.com) profile and also in the [Challenge 4 Telegram!](https://t.me/+_NeUIJ664Tc1MzIx)
 
 > 💬 Problems, questions, comments on the stack? Post them to the [🏗 scaffold-eth developers chat](https://t.me/joinchat/F7nCRK3kI93PoCOk)
+#   D E X - t r a i n i n g  
+ 
