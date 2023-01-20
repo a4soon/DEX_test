@@ -59,7 +59,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const initialNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const initialNetwork = NETWORKS.goerli; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -260,17 +260,17 @@ function App(props) {
 
   const EthToTokenSwapEvents = useEventListener(readContracts, "DEX", "EthToTokenSwap", localProvider, 1);
   console.log("⟠ -->🎈 EthToTokenSwapEvents:", EthToTokenSwapEvents);
-  // const TokenToEthSwapEvents = useEventListener(readContracts, "DEX", "TokenToEthSwap", 1);
-  // // console.log("🎈-->⟠ TokenToEthSwapEvents:", TokenToEthSwapEvents);
-  // const LiquidityProvidedEvents = useEventListener(readContracts, "DEX", "LiquidityProvided", 1);
-  // // console.log("➕ LiquidityProvidedEvents:", LiquidityProvidedEvents);
-  // const LiquidityRemovedEvents = useEventListener(readContracts, "DEX", "LiquidityRemoved", 1);
-  // // console.log("➖ LiquidityRemovedEvents:", LiquidityRemovedEvents);
+  const TokenToEthSwapEvents = useEventListener(readContracts, "DEX", "TokenToEthSwap", localProvider, 1);
+  console.log("🎈-->⟠ TokenToEthSwapEvents:", TokenToEthSwapEvents);
+  const LiquidityProvidedEvents = useEventListener(readContracts, "DEX", "LiquidityProvided", localProvider, 1);
+  console.log("➕ LiquidityProvidedEvents:", LiquidityProvidedEvents);
+  const LiquidityRemovedEvents = useEventListener(readContracts, "DEX", "LiquidityRemoved", localProvider, 1);
+  console.log("➖ LiquidityRemovedEvents:", LiquidityRemovedEvents);
 
   return (
     <div className="App">
       {/* ✏️ Edit the header and change the title to your project name */}
-      <Header />
+      <Header DEX from a4soon/>
       <NetworkDisplay
         NETWORKCHECK={NETWORKCHECK}
         localChainId={localChainId}
